@@ -1,4 +1,3 @@
-````markdown
 # awesome-videosaver
 
 Aplicație desktop client-server pentru descărcarea și tăierea unor secvențe video.
@@ -11,11 +10,11 @@ Clientul este realizat cu **React + Tauri**, iar serverul este realizat în **Py
 
 ### Interfața aplicației desktop
 
-![Interfața aplicației](poze/interfata.png)
+![Interfața aplicației](./poze/interfata.png)
 
 ### Serverul rulat în Docker pe Ubuntu
 
-![Server Docker](poze/server.png)
+![Server Docker](./poze/server.png)
 
 ---
 
@@ -23,9 +22,7 @@ Clientul este realizat cu **React + Tauri**, iar serverul este realizat în **Py
 
 Aplicația este împărțită în două părți:
 
-```text
-Client React/Tauri  ->  Server FastAPI  ->  yt-dlp + ffmpeg
-````
+**Client React/Tauri** → **Server FastAPI** → **yt-dlp + ffmpeg**
 
 Clientul oferă interfața grafică. Utilizatorul introduce linkul videoclipului, timpul de început, timpul de final și formatul dorit.
 
@@ -35,31 +32,30 @@ Serverul primește cererea, descarcă videoclipul, taie intervalul cerut și tri
 
 ## Funcționalități
 
-* introducere link video;
-* alegere timp de început și timp de final;
-* alegere format: `mp4` sau `mp3`;
-* verificare status server: online/offline;
-* descărcare video pe server;
-* tăiere secvență video cu `ffmpeg`;
-* trimiterea fișierului rezultat către client;
-* salvarea fișierului pe calculatorul clientului.
+- introducere link video;
+- alegere timp de început și timp de final;
+- alegere format: `mp4` sau `mp3`;
+- verificare status server: online/offline;
+- descărcare video pe server;
+- tăiere secvență video cu `ffmpeg`;
+- trimiterea fișierului rezultat către client;
+- salvarea fișierului pe calculatorul clientului.
 
 ---
 
 ## Tehnologii folosite
 
-* React
-* Tauri
-* Python
-* FastAPI
-* Uvicorn
-* Docker
-* Ubuntu Server
-* yt-dlp
-* ffmpeg
-* Tailscale
-
----
+- React
+- Tauri
+- Python
+- FastAPI
+- Uvicorn
+- Docker
+- Ubuntu Server
+- yt-dlp
+- ffmpeg
+- Tailscale
+:::
 
 ## Cum funcționează clientul
 
